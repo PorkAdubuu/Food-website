@@ -46,17 +46,22 @@ html, body {
     align-items: center;
     padding: 20px;
 }
-.logo {
+.navbar-brand{
 
     display: flex;
     align-items: center;
     margin-left: 90px;
 }
-.logo-text {
-    font-size: 2.5rem;
+.logo {
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    margin-left: 10px;
-    font-family: 'playfair Display' serif;
+    margin-left: 95px;
+    gap: 10px;
+}
+.logo-text {
+    font-size: 2.5rem;   
+    font-family: 'playfair Display' serif;   
     font-style: italic;
     font-weight: bolder;
 }
@@ -77,20 +82,26 @@ html, body {
     background-color: #dbdfd0;  
 }
 
-.booking-link a {
+.nav-btn {
     background-color: white;
     border-radius: 30px;
     border: 2px solid black;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-right: 120px;
+    margin-left: 120px;
     padding: 10px;
     color: black;
     text-decoration: none;
 
     transition: background-color 0.3 ease;
 }
-.booking-link a:hover {
-    background-color: #dbdfd0;
+.nav-btn:hover {
+    cursor: pointer;
+}
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
 .hero-section {
@@ -102,9 +113,7 @@ html, body {
 }
 .hero-content {
     text-align: center;
-    align-items: center;
-    font-family: 'playfair Display' serif;    
-   
+    font-family: 'playfair Display' serif;       
 }
 .big-text1 {
     font-size: 7rem;
@@ -113,6 +122,12 @@ html, body {
 .small-text1 {
     font-size: 1.5rem;
 }
+.button-link {
+    gap: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
 .btn {
     border-radius: 30px;
     font-size: 1.2rem;
@@ -120,7 +135,6 @@ html, body {
     background-color: #ad343e;
     border-color: #ad343e;
     padding: 15px;
-    margin-right: 15px;
 }
 .btn:hover {
     cursor: pointer;
@@ -132,4 +146,29 @@ html, body {
     border: 2px solid black;
     color: black;
     text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width 768px)  {
+    .hamburger {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .nav-links.show {
+        display: flex;
+    }
 }
