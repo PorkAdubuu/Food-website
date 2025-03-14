@@ -256,7 +256,40 @@ html, body {
 .desserts a:hover {
     text-decoration: underline;
 }
+/*3rd page about us*/
+.about-us {
+    margin-top: 20%;
+    background-color: #f9f9f7;
+    display: flex;
+    flex-direction: row;
 
+}
+.calling-card-bg {
+    height: 50vh;
+    margin-left: 30%;
+}
+.calling-card {
+    color: white;
+    font-size: 1.5rem;
+    background-color: #474747;
+    font-family: sans-serif;
+    font-weight: 400;
+    text-align: left;
+    padding: 30px;
+    padding-right: 100px;
+    border: 1px solid #474747;
+    border-radius: 30px;
+    
+    
+}
+.calling-card-text {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 20px;
+}
+.calling-card-text i{
+    margin-right: 20px;
+}
 
 
 
@@ -976,6 +1009,43 @@ html, body {
     .food-menu {
         padding-top: 15%;
     }
+    /*2nd page, second page*/
+
+    .title {
+        font-family: 'playfair Display' serif;
+        font-size: 3rem; 
+        padding-bottom: 3%;
+    }
+    /*cards codes*/
+    /*breakfast, maind dishes, drinks, desserts*/
+    
+    .breakfast,
+    .main-dish,
+    .drinks,
+    .desserts {       
+        padding: 20px;       
+    }
+    
+    .breakfast i,
+    .main-dish i,
+    .drinks i,
+    .desserts i {
+        font-size: 1.5rem;       
+        padding: 20px;
+    }
+    .breakfast p,
+    .main-dish p,
+    .drinks p,
+    .desserts p {
+        font-size: 1rem;
+    }
+    .breakfast a,
+    .main-dish a,
+    .drinks a,
+    .desserts a {       
+        font-size: 1.2rem;       
+    }
+    
 }
 
 
