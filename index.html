@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 </head>
 <body>
@@ -35,9 +37,9 @@
             </div>
             
             <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#" class="nav-link">About</a>
+                <a href="#home" class="nav-link">Home</a>               
                 <a href="#food-menu" class="nav-link">Menu</a>
+                <a href="#about-us" class="nav-link">About</a>
                 <a href="#" class="nav-link">Pages</a>
                 <a href="#" class="nav-link">Contact</a>
                 <button class="nav-btn">Book A Table</button>
@@ -54,7 +56,7 @@
         </nav>
     </div>
     <!--First page-->
-    <div class="hero-section">
+    <div class="hero-section" data-aos="zoom-out" data-aos-delay="200" data-aos-duration="1000">
         <div class="hero-content">           
             <span class="big-text1">Best Food for<br>your taste</span> 
             <p class="small-text1">Discover delectable cuisine and unforgettable moments<br>in our welcoming, culinary heaven.</p>      
@@ -65,7 +67,7 @@
         </div>      
     </div>
     <!--Second page-->
-    <div class="food-menu" id="food-menu">
+    <div class="food-menu" id="food-menu" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
         <span class="title">Browse Our Menu</span>
         <div class="card">
             <div class="breakfast">
@@ -95,12 +97,37 @@
         </div>
     </div>
     <!--3rd page-->
-    <div class="about-us" id="about-us">      
+    <div class="about-us" id="about-us"data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">   
+        
         <img src="images/about-img.png" class="calling-card-bg" alt="Calling card background image">
         <div class="calling-card">
             <span class="calling-card-text">Come and visit us</span>
             <p><i class="bx bxs-phone"></i>(414) 857 - 0107</p>
+            <p><i class='bx bxs-envelope'></i> happytummy@restaurant.com</p>
+            <p><i class='bx bxs-map'></i>837 W. Marshall Lane Marshalltown,<br><span class="line-indent">IA 50158, Los Angeles</span></p>               
         </div>
+          
+        <div class="about-us-intro">
+            <h1>We provide healthy<br>food for your family.</h1>
+           
+            <p>
+                Our story began with a vision to create a unique dining<br>
+                experience that merges fine dining, exceptional service, and a<br>
+                vibrant ambiance. Rooted in city's rich culinary culture, we aim to<br>
+                honor our local roots while infusing a global palate.
+            </p>
+            <p>
+                At place, we believe that dining is not just about food, but also about the<br>
+                overall experience. Our staff, renowned for their warmth and dedication,<br>
+                strives to make every visit an unforgettable event.
+            </p>
+            
+            <a class="about-us-link" href="#">More About Us<a/>
+        </div>
+        
+                      
+        
+        
     </div>
 
 
@@ -109,5 +136,11 @@
 
 
     <script src="script.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+
 </body>
 </html>

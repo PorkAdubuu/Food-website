@@ -10,6 +10,16 @@ html, body {
     margin: 0;
     padding: 0;
 }
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
 .top-bar {
     background: #474747;
     color: white;
@@ -186,11 +196,13 @@ html, body {
     background: url('images/whitebg.png') no-repeat center/cover;
     background-size: cover;
     height: calc(100vh - 250px);
+    
 }
 .title {
     font-family: 'playfair Display' serif;
     font-size: 4rem; 
     padding-bottom: 3%;
+    margin-top: 10%;
 }
 /*cards codes*/
 /*breakfast, maind dishes, drinks, desserts*/
@@ -261,35 +273,85 @@ html, body {
     margin-top: 20%;
     background-color: #f9f9f7;
     display: flex;
-    flex-direction: row;
+    position: relative;
+    padding-bottom: 100px;
+    
 
 }
+
 .calling-card-bg {
-    height: 50vh;
-    margin-left: 30%;
+    height: 60vh;
+    margin-left: 10%;
+    margin-top: 5%;
+
 }
-.calling-card {
+.calling-card {   
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     background-color: #474747;
     font-family: sans-serif;
-    font-weight: 400;
+    font-weight: bold;
     text-align: left;
-    padding: 30px;
-    padding-right: 100px;
     border: 1px solid #474747;
-    border-radius: 30px;
-    
-    
+    border-radius: 15px;
+    position: absolute;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 70px;    
+    padding-bottom: 70px;
+    left: 27%;
+    top: 50%; 
 }
 .calling-card-text {
-    margin-bottom: 30px;
-    display: flex;
-    gap: 20px;
+    font-size: 1.5rem;
+    
+    
 }
-.calling-card-text i{
+.calling-card p,
+.calling-card i {
     margin-right: 20px;
+    font-size: 1rem;
+    font-weight: lighter;
 }
+.calling-card p {
+    margin-top: 30px;
+}
+.line-indent {
+    display: inline-block;
+    margin-left: 35px;
+    margin-top: 5px;
+}
+
+.about-us-intro {
+    margin-left: 15%;
+    margin-top: 10%;
+}
+.about-us-intro h1 {
+    font-weight: lighter;
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+.about-us-intro p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #6f7266;
+}
+
+.about-us-link {
+    display: inline-block;
+    border: 2.3px solid black;
+    text-decoration: none;
+    color: black;
+    border-radius: 100px;
+    padding: 8%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 1.5rem;   
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 550;
+    margin-top: 50px;
+}
+
 
 
 
@@ -873,7 +935,7 @@ html, body {
     }
 }
 /* Large screens (desktops, laptops) */
-@media (min-width: 1201px) {
+@media (min-width: 1201px) and (max-width: 1500px){
     .top-bar {
         background: #474747;
         color: white;
